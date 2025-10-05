@@ -35,12 +35,14 @@ insertAt.onclick = function () {
 };
 
 let pop = document.getElementById("pop");
+//pop() elimina el ultimo elemento del array
 pop.onclick = function () {
     miArray.pop();
    actualizarArray();
 };
 
 let shift = document.getElementById("shift");
+// shift() elimina el primer elemento del array
 shift.onclick = function () {
     miArray.shift();
    actualizarArray();
@@ -49,7 +51,10 @@ shift.onclick = function () {
 
 let removeAt = document.getElementById("removeAt");
 removeAt.onclick = function () {
+    // remove at eliminar un elemento de una posicion especifica
+    // para esto se usa split()
     let numero = document.getElementById("removeIndex").value;
+    //splice(indice,cantidadAEliminar)
     miArray.splice(numero,1);
    actualizarArray();
 };
