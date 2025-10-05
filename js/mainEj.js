@@ -44,11 +44,17 @@ const jugador = result;
 console.log(result);
 const computadora = juego[Math.floor(Math.random() * 3)];
 
+
 console.log("Jugador:", jugador);
 console.log("Computadora:", computadora);
 // Resultado simple
 if (jugador === computadora) {
  document.getElementById("resultado").textContent = "¡Empate!"
+ alert("Ver Resultado?");
+        document.open();
+        document.write(
+          "<h1>¡Empate!</h1>",
+        );
     console.log("¡Empate!");
 } else if (
     (jugador === "🪨" && computadora === "✂️") ||
