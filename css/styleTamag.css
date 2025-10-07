@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.cuadrantes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "cuadro1 cuadro2"
+    "cuadro3 cuadro4";
+
+  position: relative;
+  height: 100vh;
+}
+
+.cuadro {
+  width: 100%;
+  height: 100%;
+display: grid;
+ grid-template-rows: auto auto;
+
+}
+
+.rosa    {
+    grid-area: cuadro1;
+    background-color: pink; 
+  align-content: start;
+}
+.amarillo{
+    grid-area: cuadro2;
+     background-color: yellow;
+     align-content: start;
+    }
+.azul    { 
+    grid-area: cuadro3;
+    background-color: #00bfff; 
+ align-content: end;
+ 
+}
+.morado  { 
+    grid-area: cuadro4;
+    background-color: purple; 
+ align-content: end;
+}
+
+.centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.586);
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+
+
+
+}
+
+.imagen-central {
+  width: 150px;
+  height: auto;
+}
+h2{
+    text-align: center;
+}
+
+#txt-comer{
+    text-align: center;
+    margin: 10px;
+    color: rgb(208, 13, 45);
+}
+ #txt-pelear{
+    text-align: center;
+    margin: 10px;
+    color: rgb(12, 8, 226);
+}
+#txt-jugar{
+    text-align: center;
+    margin: 10px;
+    color: rgb(223, 151, 17);
+}
+#txt-dormir{
+    text-align: center;
+    margin: 10px;
+    color: rgb(213, 50, 132);
+}
+.barra-comida{
+    border-radius: 100px;
+    background-color: black;
+    margin: 50px;
+}
+.bar-eat-p{
+    padding: 5px;
+    border-radius: 100px;
+background-color:  rgb(213, 50, 132);
+width: 25%;
+}
+.barra-jugar{
+    border-radius: 100px;
+    background-color: black;
+    margin: 50px;
+}
+.bar-play-p{
+    padding: 5px;
+    border-radius: 100px;
+background-color: rgb(223, 151, 17);
+width: 25%;
+}
+
+.barra-pelear{
+    border-radius: 100px;
+    background-color: black;
+    margin: 50px;
+}
+.bar-eight-p{
+    padding: 5px;
+    border-radius: 100px;
+background-color: rgb(22, 19, 233);
+width: 25%;
+}
+
+.barra-dormir{
+    border-radius: 100px;
+    background-color: black;
+    margin: 50px;
+}
+.bar-sleep-p{
+    padding: 5px;
+    border-radius: 100px;
+background-color: rgb(216, 101, 216);
+width: 25%;
+}
+
+.barra-amor{
+    width: 350px;
+    border-radius: 100px;
+    background-color: black;
+    margin: 50px;
+}
+.bar-love-p{
+    padding: 5px;
+    border-radius: 100px;
+background-color: rgb(28, 193, 28);
+width: 25%;
+}
+
+.botones-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.btn-icon-b{
+    margin: 3px;
+    width: 30px;
+}
+
+.btn-icon-comida{
+    margin: 10px;
+    border: 2px solid  rgb(213, 50, 132);
+    border-radius: 50px;
+    background-color: palevioletred;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.625);
+}
+
+.btn-icon-jugar{
+    margin: 10px;
+    border: 2px solid   rgb(223, 151, 17);
+    border-radius: 50px;
+    background-color: rgb(231, 220, 57);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.625);
+}
+
+.btn-icon-pelear{
+    margin: 10px;
+    border: 2px solid  rgb(22, 19, 233);
+    border-radius: 50px;
+    background-color: aqua;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.625);
+}
+
+.btn-icon-dormir{
+    margin: 10px;
+    border: 2px solid   rgb(216, 101, 216);
+    border-radius: 50px;
+    background-color: mediumpurple;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.625);
+}

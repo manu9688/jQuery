@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styleTamag.css">
+
+</head>
+
+<body>
+    <div class="cuadrantes">
+        <div class="cuadro rosa">
+
+            <h3 id="txt-comer">Comer</h3>
+            <div class="barra-comida">
+                <div id="barEat" class="bar-eat-p">25% Full</div>
+            </div>
+            <div class="botones-iconos">
+                <button  onclick="comer()" class="btn-icon-comida"> <img class="btn-icon-b" src="./img/icon-pez.png" alt="pez"></button>
+                <button onclick="comer()" class="btn-icon-comida"> <img class="btn-icon-b" src="./img/icon-carne.png"
+                        alt="carne"></button>
+                <button onclick="comer()" class="btn-icon-comida"> <img class="btn-icon-b" src="./img/icon-pollo.png"
+                        alt="pollo"></button>
+            </div>
+
+
+
+
+        </div>
+        <div class="cuadro amarillo">
+            <h3 id="txt-jugar">Jugar</h3>
+            <div class="barra-jugar">
+                <div id="barPlay" class="bar-play-p">25% Fun</div>
+            </div>
+            <div class="botones-iconos">
+                <button onclick="jugar()" class="btn-icon-jugar"> <img class="btn-icon-b" src="./img/icon-consola.png"
+                        alt="consola"></button>
+                <button onclick="jugar()" class="btn-icon-jugar"> <img class="btn-icon-b" src="./img/icon-pelota.png"
+                        alt="pelota"></button>
+                <button onclick="jugar()" class="btn-icon-jugar"> <img class="btn-icon-b" src="./img/icono-microfono.png"
+                        alt="micorfono"></button>
+            </div>
+        </div>
+
+        <div class="cuadro azul">
+            <h3 id="txt-pelear">Pelear</h3>
+            <div class="barra-pelear">
+                <div id="barStrength" class="bar-eight-p">25% Strength</div>
+            </div>
+            <div class="botones-iconos">
+                <button onclick="pelear()" class="btn-icon-pelear"> <img class="btn-icon-b" src="./img/icon-puno.png" alt="puño"></button>
+                <button onclick="pelear()" class="btn-icon-pelear"> <img class="btn-icon-b" src="./img/icon-correr.png"
+                        alt="correr"></button>
+            </div>
+        </div>
+        <div class="cuadro morado">
+            <h3 id="txt-dormir">Dormir</h3>
+            <div class="barra-dormir">
+                <div id="barSleep" class="bar-sleep-p">25% Energy</div>
+            </div>
+            <div class="botones-iconos">
+                <button onclick="dormir()" class="btn-icon-dormir"> <img class="btn-icon-b" src="./img/icon-dormir.png"
+                        alt="dormir"></button>
+                <button onclick="dormir()" class="btn-icon-dormir"> <img class="btn-icon-b" src="./img/icon-luna.png" alt="luna"></button>
+            </div>
+            
+               <div class="centro">
+                <h2>Blue</h2>
+              
+                <img src="./img/gato.png" alt="Mascota" class="imagen-central">
+                  
+                <h4>❤️❤️❤️</h4>
+                <div class="barra-amor">
+                    <div id="barHappy" class="bar-love-p">25% Happiness</div>
+                </div>
+            </div>
+        
+
+        </div>
+    </div>
+    <script src="./js/mainTamag.js"></script>
+</body>
+
+</html>
