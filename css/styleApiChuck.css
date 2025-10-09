@@ -1,0 +1,22 @@
+html{
+    margin: 10px;
+    padding: 10px;
+}
+
+#img-size{
+    width: 200px;
+    height: 150px;
+    image-rendering: pixelated;
+}
+
+.element-position{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(228, 171, 161);
+}
+
+#btn-red{
+margin: 15px;
+
+}
