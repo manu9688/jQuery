@@ -1,0 +1,53 @@
+html{
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contenedor{
+    
+    color: rgba(88, 86, 86, 0.984);
+    justify-items: center;
+      border-bottom: 1px solid grey; /* Línea completa */
+  padding-bottom: 0.5rem;
+}
+
+
+h2{
+   text-align: center;
+    color:rgba(88, 86, 86, 0.984) ;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin: 10px;
+    background-color: rgb(63, 169, 255);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+h3 {
+     text-align: center;
+}
+
+#btn-reiniciar{
+     display: block;
+margin: auto;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      background-color: rgb(63, 169, 255);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1px solid gray;
+    
+}
