@@ -1,0 +1,46 @@
+    body {
+      /* Imagen de fondo */
+      background-image: url('../img/darbukaFondo.jpg');
+
+      /* Opciones de estilo */
+      background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
+      background-repeat: no-repeat; /* Evita que se repita */
+      background-position: center;  /* Centra la imagen */
+      height: 100vh;                /* Ocupa toda la altura de la ventana */
+      margin: 0;
+       font-family: 'Scheherazade New', serif;
+    }
+ .title{
+    color: yellow;
+    font-size:150%;
+justify-items: center;
+ text-shadow: 2px 2px 4px black;
+ }
+
+ #img-size{
+    margin: 5px;
+    width: 100px;
+  
+    border: 1px solid yellow;
+    border-radius: 10px;
+ }
+.sonidos{
+    display: flex;
+    flex-direction: column;
+}  
+
+.btn-sounds{
+   border: none;
+  background: none;
+}
+ .texto-superpuesto {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: yellow;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px black;
+      text-align: center;
+      padding: 1rem;
+    }
