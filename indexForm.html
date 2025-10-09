@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/styleForm.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Formulario</h1>
+        <form>
+            <div class="fila">
+                <div class="campo">
+                    <label class="label-form">First name:</label>
+                    <br>
+                    <input type="text">
+                    <div class="validacion">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label class="label-form">Last name:</label>
+                    <br>
+                    <input type="text">
+                    <div class="validacion">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label class="label-form">Username:</label>
+                    <br>
+                    <input type="text">
+                    <div class="validacion">
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="campo">
+                    <label class="label-form">City:</label>
+                    <br>
+                    <input id="in-city" type="text">
+                    <div class="validacion">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label class="label-form">State:</label>
+                    <br>
+                    <select id="estado">
+                        <option selected>Choose...</option>
+                        <option>Barcelona</option>
+                        <option>Madrid</option>
+                        <option>Valencia</option>
+                    </select>
+
+                    <div class="validacion">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label class="label-form">Zip:</label>
+                    <br>
+                    <input class="inp-6" type="text">
+                    <div class="validacion-6">
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="terminos">
+                <label>Agree to terms and conditions</label>
+            </div>
+            <button type="submit" class="boton">Submit form</button>
+
+        </form>
+    </div>
+    </form>
+</body>
+
+</html>
