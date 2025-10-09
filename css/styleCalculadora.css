@@ -1,0 +1,154 @@
+body {
+  background-color: #3b4664;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculadora {
+  width: 320px;
+  padding: 20px;
+  background-color: #252d44;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.theme-switcher {
+  text-align: right;
+}
+
+.theme-options label {
+  margin-left: 5px;
+  color: white;
+  font-size: 0.9em;
+}
+
+.pantalla {
+  background-color: #181f32;
+  color: white;
+  font-size: 2.5em;
+  text-align: right;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.teclado button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  background-color: #eae3dc;
+  color: #3b4664;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.teclado button:hover {
+  background-color: #d7ccc8;
+}
+
+.del {
+  background-color: #647198;
+  color: white;
+}
+
+.reset {
+  grid-column: span 2;
+  background-color: #647198;
+  color: white;
+}
+
+.equals {
+  grid-column: span 2;
+  background-color: #d03f2f;
+  color: white;
+}
+
+/* Tema 1 */
+.theme-1 {
+  --bg-color: #3b4664;
+  --screen-color: #181f32;
+  --keypad-color: #252d44;
+  --text-color: white;
+  --btn-color: #eae3dc;
+  --btn-text: #3b4664;
+  --del-color: #647198;
+  --equal-color: #d03f2f;
+}
+
+/* Tema 2 */
+.theme-2 {
+  --bg-color: #e6e6e6;
+  --screen-color: #eeeeee;
+  --keypad-color: #d2cdcd;
+  --text-color: #000;
+  --btn-color: #f0f0f0;
+  --btn-text: #333;
+  --del-color: #377f86;
+  --equal-color: #ca5502;
+}
+
+/* Tema 3 */
+.theme-3 {
+  --bg-color: #17062a;
+  --screen-color: #1e0836;
+  --keypad-color: #331b4d;
+  --text-color: #ffe53d;
+  --btn-color: #56077c;
+  --btn-text: #ffe53d;
+  --del-color: #8631af;
+  --equal-color: #00ded0;
+}
+
+/* Aplicación de variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.calculadora {
+  background-color: var(--keypad-color);
+}
+
+.pantalla {
+  background-color: var(--screen-color);
+  color: var(--text-color);
+}
+
+.teclado button {
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+}
+
+.del {
+  background-color: var(--del-color);
+  color: white;
+}
+
+.reset {
+  background-color: var(--del-color);
+  color: white;
+}
+
+.equals {
+  background-color: var(--equal-color);
+  color: white;
+}

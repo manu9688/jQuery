@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./css/styleCalculadora.css" />
+</head>
+<body>
+  <div class="calculadora">
+    <header class="top-bar">
+      <h1>calc</h1>
+      <div class="theme-switcher">
+        <span>THEME</span>
+        <div class="theme-options">
+          <label><input type="radio" name="theme" value="1" />1</label>
+          <label><input type="radio" name="theme" value="2" />2</label>
+          <label><input type="radio" name="theme" value="3" checked />3</label>
+        </div>
+      </div>
+    </header>
+
+    <div class="pantalla">399,981</div>
+
+    <div class="teclado">
+      <button>7</button><button>8</button><button>9</button><button class="del">DEL</button>
+      <button>4</button><button>5</button><button>6</button><button>+</button>
+      <button>1</button><button>2</button><button>3</button><button>-</button>
+      <button>.</button><button>0</button><button>/</button><button>x</button>
+      <button class="reset">RESET</button><button class="equals">=</button>
+    </div>
+  </div>
+      <script src="./js/mainCalculadora.js"></script>
+</body>
+</html>
