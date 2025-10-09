@@ -12,32 +12,39 @@
 
 <body>
     <div class="title">
-        <h2>Welcome</h2>
-        <h2>to</h2>
+        <h2>Wẹlḳōmē </h2>
+        <h2>ṯō</h2>
         <h1>Dārbuḳa S̱ouṇds</h1>
     </div>
 
     <div class="sonidos">
-        <button class="btn-sounds">
+        <button class="btn-sounds" onclick="reproducirSonido()">
             <img id="img-size" src="./img/sound1.webp" alt="">
             <div class="texto-superpuesto">W</div>
         </button>
-        <button class="btn-sounds">
+         <audio id="sonido-darbuka" src="./sounds/sounds_Darbuka_06_76_SP.mp3"></audio>
+        <button class="btn-sounds" onclick="reproducirSonido()">
             <img id="img-size" src="./img/sound2.webp" alt="">
-          
+              <div class="texto-superpuesto">A</div>
         </button>
-        <button class="btn-sounds">
+                 <audio id="sonido-darbuka" src="./sounds/sounds_Darbuka_105_76_SP.mp3"></audio>
+        <button class="btn-sounds" onclick="reproducirSonido()">
             <img id="img-size" src="./img/sound3.webp" alt="">
+              <div class="texto-superpuesto">D</div>
         </button>
-        <button class="btn-sounds">
+                 <audio id="sonido-darbuka" src="./sounds/sounds_Darbuka_118_76_SP.mp3"></audio>
+        <button class="btn-sounds" onclick="reproducirSonido()">
             <img id="img-size" src="./img/sound4.webp" alt="">
+              <div class="texto-superpuesto">S</div>
         </button>
-        <button class="btn-sounds">
+                 <audio id="sonido-darbuka" src="./sounds/sounds_Darbuka_42_76_SP.mp3"></audio>
+        <button class="btn-sounds" onclick="reproducirSonido()">
             <img id="img-size" src="./img/sound5.webp" alt="">
+              <div class="texto-superpuesto">E</div>
         </button>
-
+                 <audio id="sonido-darbuka" src="./sounds/sounds_Darbuka_66_76_SP.mp3"></audio>
     </div>
-
+ <script src="./js/mainTambor.js"></script>
 </body>
 
 </html>

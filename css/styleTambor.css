@@ -17,30 +17,45 @@ justify-items: center;
  text-shadow: 2px 2px 4px black;
  }
 
+
  #img-size{
     margin: 5px;
     width: 100px;
-  
     border: 1px solid yellow;
     border-radius: 10px;
  }
 .sonidos{
-    display: flex;
-    flex-direction: column;
+display: flex;
+  flex-direction: column;     /* Apila los botones verticalmente */
+  align-items: flex-start;    /* Alinea a la izquierda */
+ margin-left: 300px;
 }  
+    .btn-sounds {
+      position: relative;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
 
-.btn-sounds{
+
+.btn-sounds img{
    border: none;
   background: none;
+      border-radius: 8px;
 }
- .texto-superpuesto {
+
+
+
+  .texto-superpuesto {
       position: absolute;
-      top: 55%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: yellow;
-      font-size: 2rem;
+      font-weight: bold;
+      font-size: 1rem;
       text-shadow: 2px 2px 4px black;
+      pointer-events: none; /* evita que el texto bloquee el clic */
       text-align: center;
-      padding: 1rem;
     }
+
