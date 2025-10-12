@@ -11,69 +11,66 @@
 <body>
     <div class="contenedor">
         <h1>Formulario</h1>
-        <form>
+        <form id="miForm">
             <div class="fila">
                 <div class="campo">
                     <label class="label-form">First name:</label>
                     <br>
-                    <input type="text">
-                    <div class="validacion">
-                    </div>
+                    <input id="nombre" type="text" placeholder="Nombre">
+                    <div class="error" id="error-nombre"></div>
                 </div>
                 <div class="campo">
                     <label class="label-form">Last name:</label>
                     <br>
-                    <input type="text">
-                    <div class="validacion">
-                    </div>
+                    <input id="apellido" type="text" placeholder="Apellido">
+                    <div class="error" id="error-apellido"></div>
                 </div>
                 <div class="campo">
                     <label class="label-form">Username:</label>
                     <br>
-                    <span>@</span>
-                    <input type="text">
-                    <div class="validacion">
-                    </div>
+                    <input id="usuario" type="text" placeholder="Usuario">
+                    <div class="error" id="error-usuario"></div>
                 </div>
             </div>
             <div class="fila">
                 <div class="campo">
                     <label class="label-form">City:</label>
                     <br>
-                    <input id="in-city" type="text">
-                    <div class="validacion">
-                    </div>
+                    <input id="ciudad" type="text" placeholder="Ciudad">
+                    <div class="error" id="error-ciudad"></div>
                 </div>
                 <div class="campo">
                     <label class="label-form">State:</label>
                     <br>
-                    <select id="estado">
-                        <option selected>Choose...</option>
-                        <option>Barcelona</option>
-                        <option>Madrid</option>
-                        <option>Valencia</option>
-                    </select>
-
-                    <div class="validacion">
+                    <div class="campo">
+                        <select id="estado">
+                            <option value="">Selecciona tu estado</option>
+                            <option value="bcn">Barcelona</option>
+                            <option value="tgn">Tarragona</option>
+                            <option value="mad">Madrid</option>
+                        </select>
+                        <div class="error" id="error-estado"></div>
                     </div>
+
                 </div>
                 <div class="campo">
                     <label class="label-form">Zip:</label>
                     <br>
-                    <input class="inp-6" type="text">
-                    <div class="validacion-6">
-                    </div>
+                    <input id="zip" type="number" placeholder="Codigo Postal">
+                    <div class="error" id="error-zip"></div>
                 </div>
             </div>
             <div class="checkbox">
                 <input type="checkbox" id="terminos">
                 <label>Agree to terms and conditions</label>
+                <div class="error" id="error-terminos"></div>
             </div>
             <button type="submit" class="boton">Submit form</button>
 
         </form>
+<div id="green"></div>
     </div>
-    </form>
+    <script src="./js/mainForm.js"></script>
 </body>
 
 </html>
